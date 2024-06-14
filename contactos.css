@@ -2,52 +2,113 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background-image: url(./imagenes/logo.png);
+    background-size: 150vw;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
 .contact-container {
-    background-color: white;
+    background-color: black;
+    opacity: 85%;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    padding-bottom: 27vh;
+    padding-top: 27vh;
 }
+
 .contact-container h2 {
     margin: 0 0 10px;
+    color: white;
 }
+
 .contact-container p {
     margin: 10px 0;
+    color: white;
 }
+
 .contact-container a {
-    color: #333;
-    text-decoration: none;
+    color: whitesmoke;
     display: inline-block;
     margin: 10px 0;
 }
+
 .contact-container a:hover {
-    color: #555;
+    color: whitesmoke;
 }
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.contact-item img {
+    margin-right: 16px;
+}
+
 nav {
     background-color: #444;
     width: 100%;
     text-align: center;
-    position: fixed;
     bottom: 0;
     left: 0;
     padding: 10px 0;
 }
+
 nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
 }
+
 nav a:hover {
     background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.instagram {
+    width: 7vh;
+    height: auto;
+    border-radius: 80%;
+}
+
+.whatsapp {
+    width: 7vh;
+    height: auto;
+    border-radius: 80%;
+}
+
+.riotgames {
+    width: 7vh;
+    height: auto;
+    border-radius: 80%;
 }
