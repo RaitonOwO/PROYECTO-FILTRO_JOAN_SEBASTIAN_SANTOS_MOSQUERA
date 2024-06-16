@@ -76,6 +76,22 @@ nav a:hover {
     animation: fadeInContainer 1s ease-in-out;
 }
 
+.comprar-btn {
+    display: inline-block;
+    background-color: #007bff; 
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    align-self: flex-end; 
+}
+
+.comprar-btn:hover {
+    background-color: #0056b3;
+}
+
 @keyframes fadeInContainer {
     from { opacity: 0; }
     to { opacity: 1; }
