@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cubo-info {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a tamaños de pantalla más pequeños */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imagen-cubo {
+    flex: 1 1 50%; /* Ocupa la mitad del espacio en pantallas más grandes */
+    max-width: 50%; /* Tamaño máximo de la imagen */
+    margin-right: 20px;
+}
+
+.imagen-cubo img {
+    width: 100%; /* La imagen ocupa todo el espacio disponible */
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.especificaciones {
+    flex: 1 1 40%; /* Ocupa el 40% del espacio en pantallas más grandes */
+    margin-left: 20px;
+}
+
+.especificaciones h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+.especificaciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.especificaciones ul li {
+    margin-bottom: 8px;
+}
+
+.especificaciones ul li strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Media query para pantallas más pequeñas (como dispositivos móviles) */
+@media (max-width: 600px) {
+    .cubo-info {
+        flex-direction: column; /* Coloca los elementos uno encima del otro */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+
+    .imagen-cubo,
+    .especificaciones {
+        flex: auto;
+        max-width: 100%; /* Ajusta el ancho al 100% */
+        margin: 0 0 20px; /* Añade un espacio entre elementos */
+    }
+}

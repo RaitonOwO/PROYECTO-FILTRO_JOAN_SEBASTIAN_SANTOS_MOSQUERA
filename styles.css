@@ -4,76 +4,133 @@ body {
     padding: 0;
     background-image: url(./imagenes/logo.png);
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    transition: background-image 0.5s ease;
 }
+
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
+
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     background-color: #444;
-    padding: 10 px;
+    padding: 10px;
+    flex-wrap: wrap;
 }
+
 nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
-    padding: 10 px 20 px;
     text-align: center;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;  
 }
+
 nav a:hover {
     background-color: #555;
+    transform: scale(1.05); 
+}
+
+.tittle{
+    color: white;
 }
 
 .container {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .product {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 16px;
     text-align: center;
     background-color: white;
-    margin-bottom: 20px;
-    opacity: 96%;
-    
+    margin: 10px;
+    flex: 1 1 calc(100% - 40px);
+    max-width: 100%;
+    opacity: 0.96;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
 }
+
+.product:hover {
+    opacity: 1;
+    transform: scale(1.02); 
+}
+
 .product img {
     max-width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
+    transition: transform 0.3s ease; 
 }
+
+.product img:hover {
+    transform: scale(1.1); 
+}
+
 .product h2 {
     font-size: 1.5em;
     margin: 0 0 10px;
     color: black;
 }
+
 .product p {
     margin: 0 0 15px;
+    color: black;
 }
+
 .product button {
     background-color: #333;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease; 
 }
+
 .product button:hover {
     background-color: #555;
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
-h2{
-    color: #ddd;
+
+@media (min-width: 600px) {
+    .container {
+        padding: 20px 40px; 
+    }
+
+    .product {
+        flex: 1 1 calc(50% - 40px); 
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 20px 60px; 
+    }
+
+    .product {
+        flex: 1 1 calc(33.333% - 40px); 
+    }
 }

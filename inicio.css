@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./imagenes/logo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white; /* Cambiar el color del texto a blanco */
+    transition: background-image 0.5s ease;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centrar el nav */
+    background-color: #444;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transición para el color de fondo y transformación */
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+.record{
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semiopaco */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white; /* Cambiar el color del texto a blanco */
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadimos transición para opacidad y transformación */
+}
+
+.record img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+.History{
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semiopaco */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white; /* Cambiar el color del texto a blanco */
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadimos transición para opacidad y transformación */
+}
+
+.record:hover, .history:hover {
+    opacity: 1;
+    transform: scale(1.02); /* Efecto de escala al pasar el mouse */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Media queries para hacer responsive */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+    main {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    nav {
+        justify-content: center; /* Centrar el nav en pantallas grandes */
+        margin: 0 auto; /* Asegurar que el nav está centrado */
+    }
+
+    main {
+        padding: 20px 60px; /* Ajustar el padding para mejor distribución en pantallas grandes */
+    }
+}
