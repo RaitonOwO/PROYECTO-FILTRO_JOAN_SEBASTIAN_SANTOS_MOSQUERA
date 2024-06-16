@@ -87,7 +87,6 @@ h1 {
     animation: fadeInTitle 1s ease-in-out;
 }
 
-
 @keyframes fadeInTitle {
     from { opacity: 0; }
     to { opacity: 1; }

@@ -132,5 +132,11 @@ footer {
 
     .product {
         flex: 1 1 calc(33.333% - 40px); 
+        max-width: 30%;
+    }
+    .product img {
+        max-width: 100%; 
     }
 }
+
+
