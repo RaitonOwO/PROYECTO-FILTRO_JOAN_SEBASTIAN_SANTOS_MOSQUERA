@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    min-height: 100vh; 
 }
 
 header {
@@ -21,11 +21,11 @@ header {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    transition: background-color 0.3s ease; /* Transición sutil en el fondo */
+    transition: background-color 0.3s ease; 
 }
 
 header:hover {
-    background-color: #444; /* Color de fondo al pasar el ratón */
+    background-color: #444; 
 }
 
 nav {
@@ -35,26 +35,26 @@ nav {
     padding: 10px 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Para asegurar que los enlaces de navegación se envuelvan */
+    flex-wrap: wrap; 
     justify-content: center;
-    transition: background-color 0.3s ease; /* Transición sutil en el fondo */
+    transition: background-color 0.3s ease; 
 }
 
 nav:hover {
-    background-color: #555; /* Color de fondo al pasar el ratón */
+    background-color: #555; 
 }
 
 .contact-container {
-    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.85); 
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 90%;
-    margin: 80px 0 20px; /* Ajustar el margen superior para que no se superponga con el header y nav */
+    margin: 80px 0 20px; 
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards; /* Animación sutil al aparecer */
+    animation: fadeInUp 0.8s ease forwards; 
 }
 
 @keyframes fadeInUp {
@@ -67,34 +67,34 @@ nav:hover {
 .contact-container h2 {
     margin: 0 0 10px;
     color: white;
-    transition: color 0.3s ease; /* Transición sutil en el color */
+    transition: color 0.3s ease; 
 }
 
 .contact-container h2:hover {
-    color: #ffeb3b; /* Color al pasar el ratón */
+    color: #ffeb3b; 
 }
 
 .contact-container p {
     margin: 10px 0;
     color: white;
-    transition: color 0.3s ease; /* Transición sutil en el color */
+    transition: color 0.3s ease;
 }
 
 contact-container p:hover {
-    color: #ffeb3b; /* Color al pasar el ratón */
+    color: #ffeb3b; 
 }
 
 .contact-container a {
     color: whitesmoke;
     display: inline-block;
     margin: 10px 0;
-    word-wrap: break-word; /* Para evitar desbordamiento de texto */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transición sutil en el color y transform */
+    word-wrap: break-word; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .contact-container a:hover {
-    color: #ffeb3b; /* Color al pasar el ratón */
-    transform: scale(1.1); /* Agrandar sutilmente al pasar el ratón */
+    color: #ffeb3b; 
+    transform: scale(1.1); 
 }
 
 .contact-item {
@@ -102,24 +102,24 @@ contact-container p:hover {
     align-items: center;
     justify-content: center;
     margin: 25px 0;
-    flex-wrap: wrap; /* Para asegurar que los elementos se envuelvan en pantallas pequeñas */
-    transition: transform 0.3s ease; /* Transición sutil en la transformación */
+    flex-wrap: wrap; 
+    transition: transform 0.3s ease; 
 }
 
 .contact-item:hover {
-    transform: scale(1.05); /* Agrandar sutilmente al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 .contact-item img {
-    margin: 10px; /* Aumentar el margen para mejor apariencia en pantallas pequeñas */
-    width: 50px; /* Ajustar el tamaño de las imágenes para adaptarse mejor a diferentes pantallas */
+    margin: 10px; 
+    width: 50px; 
     height: auto;
     border-radius: 50%;
-    transition: transform 0.3s ease; /* Transición sutil en la transformación */
+    transition: transform 0.3s ease; 
 }
 
 .contact-item img:hover {
-    transform: rotate(360deg); /* Rotar la imagen al pasar el ratón */
+    transform: rotate(360deg); 
 }
 
 nav a {
@@ -127,13 +127,13 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
-    margin: 5px; /* Aumentar el margen para mejor apariencia en pantallas pequeñas */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición sutil en el fondo y transformación */
+    margin: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 nav a:hover {
     background-color: #555;
-    transform: scale(1.1); /* Agrandar sutilmente al pasar el ratón */
+    transform: scale(1.1); 
 }
 
 footer {
@@ -142,33 +142,32 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: relative; /* Cambiado a relativo para mejor capacidad de respuesta */
+    position: relative; 
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards; /* Animación sutil al aparecer */
+    animation: fadeInUp 0.8s ease forwards; 
 }
 
-/* Media queries para tamaños de pantalla específicos */
 
-/* Pantallas pequeñas */
+
 @media (max-width: 600px) {
     .contact-item {
-        flex-direction: column; /* Cambiar la dirección de los elementos a columna en pantallas pequeñas */
+        flex-direction: column; 
     }
     .contact-item img {
-        width: 40px; /* Ajustar el tamaño de las imágenes para pantallas pequeñas */
+        width: 40px; 
     }
 }
 
-/* Pantallas medianas y grandes */
+
 @media (min-width: 601px) {
     .contact-container {
-        width: 80%; /* Aumentar el ancho del contenedor en pantallas medianas */
+        width: 80%; 
     }
 }
 
 @media (min-width: 900px) {
     .contact-container {
-        width: 60%; /* Aumentar el ancho del contenedor en pantallas grandes */
+        width: 60%; 
     }
 }

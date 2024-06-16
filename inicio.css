@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    color: white; /* Cambiar el color del texto a blanco */
+    color: white; 
     transition: background-image 0.5s ease;
 }
 
@@ -27,7 +27,7 @@ main {
 
 nav {
     display: flex;
-    justify-content: center; /* Centrar el nav */
+    justify-content: center; 
     background-color: #444;
     padding: 10px;
     flex-wrap: wrap;
@@ -39,12 +39,12 @@ nav a {
     text-decoration: none;
     text-align: center;
     margin: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transición para el color de fondo y transformación */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 nav a:hover {
     background-color: #555;
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.05); 
 }
 
 section {
@@ -56,37 +56,37 @@ h2 {
 }
 
 .record{
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semiopaco */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white; /* Cambiar el color del texto a blanco */
-    opacity: 0.9;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadimos transición para opacidad y transformación */
+    color: white; 
+    opacity: 98%;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
 .record img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    margin: 0 auto; 
 }
 
 .History{
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semiopaco */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white; /* Cambiar el color del texto a blanco */
-    opacity: 0.9;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadimos transición para opacidad y transformación */
+    color: white; 
+    opacity: 98%;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
 .record:hover, .history:hover {
     opacity: 1;
-    transform: scale(1.02); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.02); 
 }
 
 footer {
@@ -100,7 +100,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-/* Media queries para hacer responsive */
+
 @media (max-width: 600px) {
     header, footer {
         padding: 10px;
@@ -112,11 +112,11 @@ footer {
 
 @media (min-width: 900px) {
     nav {
-        justify-content: center; /* Centrar el nav en pantallas grandes */
-        margin: 0 auto; /* Asegurar que el nav está centrado */
+        justify-content: center; 
+        margin: 0 auto; 
     }
 
     main {
-        padding: 20px 60px; /* Ajustar el padding para mejor distribución en pantallas grandes */
+        padding: 20px 60px; 
     }
 }

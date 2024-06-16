@@ -1,8 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-image: url(./imagenes/logo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    transition: background-image 0.5s ease;
+    animation: fadeInBackground 1s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    animation: slideInDown 0.5s ease;
+}
+
+header h1 {
+    color: white;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav {
+    background-color: #444; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInNavLink 0.5s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInNavLink {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .container {
@@ -12,37 +73,69 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeInContainer 1s ease-in-out;
+}
+
+@keyframes fadeInContainer {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 h1 {
     text-align: center;
     color: #333;
+    animation: fadeInTitle 1s ease-in-out;
+}
+
+
+@keyframes fadeInTitle {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .cubo-info {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a tamaños de pantalla más pequeños */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    animation: fadeInCuboInfo 1s ease-in-out;
+}
+
+@keyframes fadeInCuboInfo {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .imagen-cubo {
-    flex: 1 1 50%; /* Ocupa la mitad del espacio en pantallas más grandes */
-    max-width: 50%; /* Tamaño máximo de la imagen */
+    flex: 1 1 50%;
+    max-width: 50%;
     margin-right: 20px;
+    animation: fadeInImage 1s ease-in-out;
+}
+
+@keyframes fadeInImage {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .imagen-cubo img {
-    width: 100%; /* La imagen ocupa todo el espacio disponible */
+    width: 100%;
     display: block;
     border-radius: 4px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    animation: fadeInImage 1s ease-in-out;
 }
 
 .especificaciones {
-    flex: 1 1 40%; /* Ocupa el 40% del espacio en pantallas más grandes */
+    flex: 1 1 40%;
     margin-left: 20px;
+    animation: fadeInEspecificaciones 1s ease-in-out;
+}
+
+@keyframes fadeInEspecificaciones {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .especificaciones h2 {
@@ -64,17 +157,16 @@ h1 {
     margin-right: 5px;
 }
 
-/* Media query para pantallas más pequeñas (como dispositivos móviles) */
 @media (max-width: 600px) {
     .cubo-info {
-        flex-direction: column; /* Coloca los elementos uno encima del otro */
-        text-align: center; /* Centra el texto en dispositivos móviles */
+        flex-direction: column;
+        text-align: center;
     }
 
     .imagen-cubo,
     .especificaciones {
         flex: auto;
-        max-width: 100%; /* Ajusta el ancho al 100% */
-        margin: 0 0 20px; /* Añade un espacio entre elementos */
+        max-width: 80%;
+        margin: 0 0 20px;
     }
 }
