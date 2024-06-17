@@ -10,7 +10,9 @@ Este proyecto es un e-commerce especializado en la venta de cubos de Rubik . Per
 
 ## Diapositivas
 
-![Diapositiva 1](https://www.canva.com/design/DAGIYSk8D2M/SnRFrM1HI_LQDGTYGfoAHw/edit)
+Para ver las diapositivas del proyecto, haz clic en el siguiente enlace:
+
+[Ver diapositivas en Canva](https://www.canva.com/design/DAGIYSk8D2M/SnRFrM1HI_LQDGTYGfoAHw/edit)
 
 
 ## Tecnologías utilizadas
