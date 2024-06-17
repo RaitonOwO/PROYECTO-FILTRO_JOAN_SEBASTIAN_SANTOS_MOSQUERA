@@ -8,6 +8,13 @@ Este proyecto es un e-commerce especializado en la venta de cubos de Rubik . Per
 - **Detalles de productos**: Cada producto muestra una imagen, nombre, precio y un botón para realizar la compra.
 - **Navegación intuitiva**: Acceso fácil a las secciones de inicio, productos y contacto a través de un menú de navegación.
 
+## Diseños 
+
+![Diseño Productos](blob:https://web.whatsapp.com/c499e722-1ebd-4882-b867-d3f79e8859da)
+![Diseño Inicio](blob:https://web.whatsapp.com/78422444-24fe-42b9-b7ac-c2b0108fe461)
+![Diseño contacto](blob:https://web.whatsapp.com/8c01b48b-ec51-4037-b24f-6dbfe1e00d03)
+
+
 ## Tecnologías utilizadas
 
 - HTML5: Utilizado para la estructura y contenido de las páginas web.
