@@ -1,5 +1,125 @@
-[
-    {
+{
+    "productos":[
+        {
+            "marca":"Moyu",
+            "peso":"78 gramos",
+            "tamaño":"4,8cm",
+            "Referencia":"RS2M",
+            "color":"stickerless",
+            "precio": 37000
+        },
+        {
+            "marca":"Qiyi",
+            "peso":"78 gramos",
+            "tamaño":"5,6cm",
+            "Referencia":"MS 2x2 M",
+            "color":"stickerless",
+            "precio": 72000
+        },
+        {
+            "marca":"Gan",
+            "peso":"78 gramos",
+            "tamaño":"5,6cm",
+            "Referencia":"251 M Leap",
+            "color":"stickerless",
+            "precio": 123000
+        },
+        {
+            "marca":"Moyu",
+            "peso":"86 gramos",
+            "tamaño":"5,6cm",
+            "Referencia":" RS3 M 2020",
+            "color":"stickerless",
+            "precio": 60000
+        },
+        {
+            "marca":"Qiyi",
+            "peso":"78 gramos",
+            "tamaño":"5,6cm",
+            "Referencia":"Valk 3 Elite M",
+            "color":"stickerless",
+            "precio": 200000
+        },
+        {
+            "marca":"Gan",
+            "peso":"86 gramos",
+            "tamaño":"56mm",
+            "Referencia":"356 M + GES",
+            "color":"stickerless",
+            "precio": 157000
+        },
+        {
+            "marca":"Moyu",
+            "peso":"86 gramos",
+            "tamaño":"60 mm",
+            "Referencia":"Moyu YJM 4x4",
+            "color":"stickerless",
+            "precio": 74000
+        },
+        {
+            "marca":"Qiyi",
+            "peso":"123 g",
+            "tamaño":"60 mm",
+            "Referencia":"MP 4X4",
+            "color":"stickerless",
+            "precio": 81000
+        },
+        {
+            "marca":"Gan",
+            "peso":"86 gramos",
+            "tamaño":"60 mm",
+            "Referencia":"GAN 460 M",
+            "color":"stickerless",
+            "precio": 380000
+        },
+        {
+            "marca":"Moyu",
+            "peso":"123 gramos",
+            "tamaño":"62 mm",
+            "Referencia":"MGC 5",
+            "color":"stickerless",
+            "precio": 70000
+        },
+        {
+            "marca":"Gan",
+            "peso":"123 gramos",
+            "tamaño":"62 mm",
+            "Referencia":"562 M",
+            "color":"stickerless",
+            "precio": 290000
+        },
+        {
+            "marca":"Qiyi",
+            "peso":"153 gramos",
+            "tamaño":"62 mm",
+            "Referencia":"MP 5x5 M",
+            "color":"stickerless",
+            "precio": 161000
+        },
+        {
+            "marca":"Moyu",
+            "peso":"150 gramos",
+            "tamaño":"61 mm",
+            "Referencia":"Aoshi WRM 6x6",
+            "color":"stickerless",
+            "precio": 214000
+        },
+        {
+            "marca":"Gan",
+            "peso":"167 gramos",
+            "tamaño":"65 mm",
+            "Referencia":"YuXin Little Magic 6x6",
+            "color":"stickerless",
+            "precio": 62000
+        },
+        {
+            "marca":"Qiyi",
+            "peso":"167 gramos",
+            "tamaño":"67 mm",
+            "Referencia":"Qifan S 6x6",
+            "color":"stickerless",
+            "precio": 103000
+        }
         
-    }
-]
+    ]
+}
