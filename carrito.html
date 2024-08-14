@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <h1>Rubik Store JS Santos</h1>
+    </header>
+    
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="index.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Mis Compras</a>
+    </nav>
+    
+    <div class="cart-container">
+        <h1>Carrito de Compras</h1>
+        <div class="cart-item">
+            <div class="item-details">
+                <h2>Producto 1</h2>
+                <p>Precio: €10.00</p>
+            </div>
+            <div class="item-quantity">
+                <button class="quantity-btn">-</button>
+                <input type="number" value="1" min="1">
+                <button class="quantity-btn">+</button>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <div class="item-details">
+                <h2>Producto 2</h2>
+                <p>Precio: €15.00</p>
+            </div>
+            <div class="item-quantity">
+                <button class="quantity-btn">-</button>
+                <input type="number" value="1" min="1">
+                <button class="quantity-btn">+</button>
+            </div>
+        </div>
+        
+        <div class="total">
+            <h3>Total: €25.00</h3>
+        </div>
+        <button class="checkout-btn">Pagar</button>
+    </div>
+</body>
+</html>
