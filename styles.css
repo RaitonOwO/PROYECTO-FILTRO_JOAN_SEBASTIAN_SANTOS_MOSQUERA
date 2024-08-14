@@ -23,20 +23,21 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #3949AB;
-    padding: 10px;
+    padding: 15px; /* Aumentado */
     flex-wrap: wrap;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
     color: #FFFFFF;
-    padding: 8px 16px;
+    padding: 12px 24px; /* Aumentado */
     text-decoration: none;
     text-align: center;
-    margin: 5px;
-    font-weight: 500;
-    border-radius: 4px;
+    margin: 8px; /* Aumentado */
+    font-weight: 600; /* Aumentado */
+    border-radius: 6px; /* Aumentado */
     background-color: #5C6BC0;
+    font-size: 1.4em; /* Aumentado */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -44,6 +45,7 @@ nav a:hover {
     background-color: #303F9F;
     transform: scale(1.05);
 }
+
 
 .tittle {
     color: #333333;
