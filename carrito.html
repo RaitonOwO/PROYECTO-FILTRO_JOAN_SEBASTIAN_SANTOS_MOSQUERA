@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,37 +17,65 @@
         <a href="contacto.html">Contacto</a>
         <a href="carrito.html">Mis Compras</a>
     </nav>
-    
-    <div class="cart-container">
-        <h1>Carrito de Compras</h1>
-        <div class="cart-item">
-            <div class="item-details">
-                <h2>Producto 1</h2>
-                <p>Precio: €10.00</p>
-            </div>
-            <div class="item-quantity">
-                <button class="quantity-btn">-</button>
-                <input type="number" value="1" min="1">
-                <button class="quantity-btn">+</button>
-            </div>
-        </div>
-        
-        <div class="cart-item">
-            <div class="item-details">
-                <h2>Producto 2</h2>
-                <p>Precio: €15.00</p>
-            </div>
-            <div class="item-quantity">
-                <button class="quantity-btn">-</button>
-                <input type="number" value="1" min="1">
-                <button class="quantity-btn">+</button>
-            </div>
-        </div>
-        
-        <div class="total">
-            <h3>Total: €25.00</h3>
-        </div>
-        <button class="checkout-btn">Pagar</button>
+
+    <div class="container" id="carrito">
+        <h2>Productos en tu carrito:</h2>
+        <ul id="lista-carrito">
+            
+        </ul>
+        <p id="total"></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
     </div>
+    <script>
+        // Recuperar el carrito de localStorage
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        // Obtener el elemento UL donde se mostrarán los productos
+        const listaCarrito = document.getElementById('lista-carrito');
+        const total = document.getElementById('total');
+
+        // Mostrar productos en el carrito
+        function mostrarCarrito() {
+            listaCarrito.innerHTML = ''; // Limpiar lista
+            let totalPrecio = 0;
+
+            carrito.forEach((producto, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${producto.nombre} - ${producto.precio} COP`;
+                
+                // Botón para eliminar producto
+                const btnEliminar = document.createElement('button');
+                btnEliminar.textContent = 'Eliminar';
+                btnEliminar.addEventListener('click', () => {
+                    eliminarProducto(index);
+                });
+                
+                li.appendChild(btnEliminar);
+                listaCarrito.appendChild(li);
+
+                totalPrecio += producto.precio;
+            });
+
+            total.textContent = `Total: ${totalPrecio} COP`;
+        }
+
+        // Eliminar producto del carrito
+        function eliminarProducto(index) {
+            carrito.splice(index, 1);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            mostrarCarrito();
+        }
+
+        // Vaciar carrito
+        const btnVaciar = document.getElementById('vaciar-carrito');
+        btnVaciar.addEventListener('click', () => {
+            carrito = [];
+            localStorage.setItem('carrito', JSON.stringify([]));
+            mostrarCarrito();
+        });
+
+        // Mostrar el carrito al cargar la página
+        mostrarCarrito();
+    </script>
 </body>
 </html>
