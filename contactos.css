@@ -1,8 +1,9 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F9; /* Fondo blanco */
+    background-color: #F4F4F9;
     color: #333333;
     text-align: center;
 }
@@ -21,7 +22,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #3949AB;
-    padding: 10px; /* Ajustado */
+    padding: 10px;
     flex-wrap: wrap;
 }
 
@@ -33,16 +34,13 @@ nav a {
     font-weight: 500;
     border-radius: 4px;
     background-color: #5C6BC0;
-    font-size: 1.5em; /* Tamaño de fuente aumentado */
+    font-size: 1.5em;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     background-color: #303F9F;
 }
-
-
-
 
 .tittle {
     color: #333333;
@@ -51,18 +49,18 @@ nav a:hover {
 }
 
 .container {
-    background-color: #F0F0F0; /* Fondo más suave */
+    background-color: #F0F0F0;
     padding: 40px;
     border-radius: 8px;
     margin: 20px auto;
-    width: 80%; /* Ancho ajustado para mayor organización */
+    width: 80%;
     max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item {
     background-color: #FFFFFF;
-    margin-bottom: 30px; /* Espacio entre cada item */
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,4 +91,54 @@ footer {
     padding: 15px 0;
     font-size: 0.9em;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; 
+    }
+
+    nav a {
+        font-size: 1.3em; 
+        padding: 6px 12px;
+    }
+
+    .container {
+        width: 90%; 
+        padding: 20px;
+    }
+
+    .tittle {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5em; 
+    }
+
+    nav {
+        overflow-x: auto; 
+    }
+
+    nav a {
+        font-size: 1.2em; 
+        padding: 5px 10px;
+    }
+
+    .container {
+        width: 95%; 
+        padding: 15px;
+    }
+
+    .contact-item img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .tittle {
+        font-size: 1.3em; 
+    }
 }

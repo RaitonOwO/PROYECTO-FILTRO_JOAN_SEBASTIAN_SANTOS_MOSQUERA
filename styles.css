@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -23,21 +24,22 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #3949AB;
-    padding: 15px; /* Aumentado */
+    padding: 15px;
     flex-wrap: wrap;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
 }
 
 nav a {
     color: #FFFFFF;
-    padding: 12px 24px; /* Aumentado */
+    padding: 12px 24px;
     text-decoration: none;
     text-align: center;
-    margin: 8px; /* Aumentado */
-    font-weight: 600; /* Aumentado */
-    border-radius: 6px; /* Aumentado */
+    margin: 8px;
+    font-weight: 600;
+    border-radius: 6px;
     background-color: #5C6BC0;
-    font-size: 1.4em; /* Aumentado */
+    font-size: 1.4em;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -45,7 +47,6 @@ nav a:hover {
     background-color: #303F9F;
     transform: scale(1.05);
 }
-
 
 .tittle {
     color: #333333;
@@ -130,14 +131,14 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
+
 @media (min-width: 768px) {
     .container {
         padding: 20px 40px;
     }
 
     .product {
-        flex: 1 1 calc(50% - 40px); /* Two products per row on medium screens */
+        flex: 1 1 calc(50% - 40px); 
     }
 }
 
@@ -147,7 +148,7 @@ footer {
     }
 
     .product {
-        flex: 1 1 calc(33.333% - 40px); /* Three products per row on large screens */
+        flex: 1 1 calc(33.333% - 40px); 
     }
 }
 
@@ -157,10 +158,68 @@ footer {
     }
 
     .product {
-        flex: 1 1 calc(25% - 40px); /* Four products per row on extra large screens */
+        flex: 1 1 calc(25% - 40px); 
     }
 
     .product h2 {
-        font-size: 1.6em; /* Adjusted heading size for larger screens */
+        font-size: 1.6em; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; 
+    }
+
+    nav a {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin: 6px;
+    }
+
+    .tittle {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .product {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: row; 
+        overflow-x: auto; 
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .tittle {
+        font-size: 1.3em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .product {
+        flex: 1 1 calc(100% - 20px); 
+    }
+
+    .product h2 {
+        font-size: 1.3em;
     }
 }
