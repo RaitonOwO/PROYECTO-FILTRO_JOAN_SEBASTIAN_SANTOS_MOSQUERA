@@ -28,16 +28,16 @@
         <button id="vaciar-carrito">Vaciar Carrito</button>
     </div>
     <script>
-        // Recuperar el carrito de localStorage
+    
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-        // Obtener el elemento UL donde se mostrarán los productos
+        
         const listaCarrito = document.getElementById('lista-carrito');
         const total = document.getElementById('total');
 
-        // Mostrar productos en el carrito
+    
         function mostrarCarrito() {
-            listaCarrito.innerHTML = ''; // Limpiar lista
+            listaCarrito.innerHTML = ''; 
             let totalPrecio = 0;
 
             carrito.forEach((producto, index) => {
@@ -51,7 +51,7 @@
                 const nombrePrecio = document.createElement('p');
                 nombrePrecio.textContent = `${producto.nombre} - ${producto.precio.toLocaleString()} COP`;
 
-                // Botón para eliminar producto
+                
                 const btnEliminar = document.createElement('button');
                 btnEliminar.textContent = 'Eliminar';
                 btnEliminar.addEventListener('click', () => {
@@ -69,14 +69,14 @@
             total.textContent = `Total: ${totalPrecio.toLocaleString()} COP`;
         }
 
-        // Eliminar producto del carrito
+    
         function eliminarProducto(index) {
             carrito.splice(index, 1);
             localStorage.setItem('carrito', JSON.stringify(carrito));
             mostrarCarrito();
         }
 
-        // Vaciar carrito
+
         const btnVaciar = document.getElementById('vaciar-carrito');
         btnVaciar.addEventListener('click', () => {
             carrito = [];
@@ -84,7 +84,7 @@
             mostrarCarrito();
         });
 
-        // Mostrar el carrito al cargar la página
+    
         mostrarCarrito();
     </script>
 </body>

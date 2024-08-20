@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-    // Datos JSON de productos
+
     const productosJSON = {
         "productos": [
             {"marca":"Moyu", "peso":"78 gramos", "tamaño":"4,8cm", "Referencia":"RS2M", "color":"stickerless", "precio": 37000, "imagen": "RS2M 2X2.avif"},
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ]
     };
 
-    // Función para renderizar productos
+   
     function renderProductos(productos) {
         productosContainer.innerHTML = '';
         productos.forEach(producto => {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         asignarEventosBotones();
     }
 
-    // Función para asignar eventos a los botones de "Comprar"
+    
     function asignarEventosBotones() {
         const botonesComprar = document.querySelectorAll('.btn-comprar');
         botonesComprar.forEach(boton => {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Función para actualizar el contenido del carrito
+   
     function actualizarCarrito() {
         carritoContenido.innerHTML = '';
         carrito.forEach(producto => {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Renderizar todos los productos al cargar
+
     renderProductos(productosJSON.productos);
 
     // Función para filtrar productos
