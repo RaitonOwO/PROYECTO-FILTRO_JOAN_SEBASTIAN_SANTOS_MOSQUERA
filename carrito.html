@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link rel="stylesheet" href="carrito.css">
+
 </head>
 <body>
     <header>
@@ -41,22 +42,31 @@
 
             carrito.forEach((producto, index) => {
                 const li = document.createElement('li');
-                li.textContent = `${producto.nombre} - ${producto.precio} COP`;
-                
+                li.classList.add('carrito-item');
+
+                const imagen = document.createElement('img');
+                imagen.src = `./imagenes/${producto.imagen}`;
+                imagen.alt = producto.nombre;
+
+                const nombrePrecio = document.createElement('p');
+                nombrePrecio.textContent = `${producto.nombre} - ${producto.precio.toLocaleString()} COP`;
+
                 // Botón para eliminar producto
                 const btnEliminar = document.createElement('button');
                 btnEliminar.textContent = 'Eliminar';
                 btnEliminar.addEventListener('click', () => {
                     eliminarProducto(index);
                 });
-                
+
+                li.appendChild(imagen);
+                li.appendChild(nombrePrecio);
                 li.appendChild(btnEliminar);
                 listaCarrito.appendChild(li);
 
                 totalPrecio += producto.precio;
             });
 
-            total.textContent = `Total: ${totalPrecio} COP`;
+            total.textContent = `Total: ${totalPrecio.toLocaleString()} COP`;
         }
 
         // Eliminar producto del carrito
