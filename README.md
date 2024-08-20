@@ -1,11 +1,12 @@
 # E-commerce de Cubos de Rubik - Rubik Store JS Santos
 
-Este proyecto es un e-commerce especializado en la venta de cubos de Rubik . Permite a los usuarios explorar diferentes productos, ver especificaciones detalladas y realizar compras de manera sencilla.
+Este proyecto es un e-commerce especializado en la venta de cubos de Rubik. Permite a los usuarios explorar diferentes productos, ver especificaciones detalladas y realizar compras de manera sencilla.
 
 ## Características principales
 
 - **Exploración de productos**: Los usuarios pueden navegar por una variedad de cubos de Rubik de marcas populares como Moyu, Qiyi y GAN.
 - **Detalles de productos**: Cada producto muestra una imagen, nombre, precio y un botón para realizar la compra.
+- **Carrito de compras**: Permite a los usuarios añadir productos al carrito, ver el resumen de los productos seleccionados y eliminar artículos del carrito.
 - **Navegación intuitiva**: Acceso fácil a las secciones de inicio, productos y contacto a través de un menú de navegación.
 
 ## Diapositivas
@@ -14,11 +15,11 @@ Para ver las diapositivas del proyecto sobre los diseños, haz clic en el siguie
 
 [Ver diapositivas en Canva](https://www.canva.com/design/DAGIYSk8D2M/SnRFrM1HI_LQDGTYGfoAHw/edit)
 
-
 ## Tecnologías utilizadas
 
 - HTML5: Utilizado para la estructura y contenido de las páginas web.
 - CSS3: Estilo y diseño de la interfaz de usuario.
+- JavaScript: Funcionalidad interactiva para la búsqueda de productos, gestión del carrito de compras y almacenamiento local.
 
 ## Funcionalidades
 
@@ -27,6 +28,13 @@ Para ver las diapositivas del proyecto sobre los diseños, haz clic en el siguie
 - **Visualización de productos**: Muestra imágenes y descripciones de los cubos de Rubik disponibles.
 - **Detalle del producto**: Enlace directo a las especificaciones detalladas de cada producto.
 - **Botón de compra**: Permite a los usuarios añadir productos al carrito y proceder con la compra.
+- **Barra de búsqueda**: Filtra productos por nombre, marca, peso, tamaño o color.
+
+### Carrito de Compras
+
+- **Mostrar carrito**: Visualiza los productos añadidos al carrito con su imagen en miniatura, nombre y precio.
+- **Eliminar productos**: Permite a los usuarios eliminar productos del carrito.
+- **Vaciar carrito**: Opción para eliminar todos los productos del carrito de una vez.
 
 ### Navegación y Diseño Responsivo
 
@@ -55,7 +63,3 @@ Para ver el sitio web del e-commerce en acción:
 ## Autor
 
 -- [RaitonOwO](https://github.com/RaitonOwO) - Desarrollador principal
-
----
-
-
