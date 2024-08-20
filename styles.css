@@ -48,6 +48,29 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+.search-container {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+
 .tittle {
     color: #333333;
     font-size: 1.8em;
